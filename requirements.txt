@@ -22,6 +22,7 @@ python-json-logger==2.0.7  # JSON formatted logging
 python-dotenv==1.0.0    # Environment variable management
 pydantic==2.5.2        # Data validation using Python type annotations
 pydantic-settings==2.1.0  # Settings management
+pyyaml==6.0.1          # YAML configuration file support
 
 # Async and Task Queue (for future implementation)
 celery==5.3.4          # Distributed task queue

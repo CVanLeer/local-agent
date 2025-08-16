@@ -1,0 +1,49 @@
+# Local Agent System Configuration
+# Copy this file to config.yaml and customize as needed
+
+agent:
+  model: "ollama/qwen2.5-coder:14b-instruct-q4_K_M"
+  context_window: 32000
+  max_tokens: 4096
+  temperature: 0.7
+  timeout: 300
+  retry_attempts: 3
+  retry_delay: 1.0
+
+system:
+  log_level: "INFO"
+  log_dir: "logs"
+  cache_dir: ".cache"
+  data_dir: "data"
+  enable_telemetry: false
+  max_workers: 4
+  api_port: 8000
+  api_host: "0.0.0.0"
+
+database:
+  type: "sqlite"
+  host: "localhost"
+  port: 5432
+  database: "agent_system"
+  username: ""
+  password: ""
+  pool_size: 10
+  pool_timeout: 30
+
+redis:
+  host: "localhost"
+  port: 6379
+  db: 0
+  password: ""
+  max_connections: 50
+  socket_timeout: 5
+  connection_timeout: 5
+
+security:
+  enable_auth: false
+  api_key: ""
+  jwt_secret: ""
+  jwt_algorithm: "HS256"
+  jwt_expiry_hours: 24
+  allowed_origins: ["*"]
+  rate_limit_per_minute: 60
