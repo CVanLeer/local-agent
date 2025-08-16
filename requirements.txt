@@ -1,0 +1,43 @@
+# Core Dependencies
+open-interpreter==0.2.0  # Main interpreter library for agent execution
+ollama==0.1.8           # Python client for Ollama API
+
+# Testing Dependencies
+pytest==7.4.3           # Testing framework
+pytest-cov==4.1.0       # Coverage reporting for pytest
+pytest-asyncio==0.21.1  # Async test support
+pytest-mock==3.12.0     # Mocking support for tests
+
+# Development Dependencies
+black==23.12.1          # Code formatter
+flake8==6.1.0          # Linter
+mypy==1.7.1            # Type checker
+ipython==8.18.1        # Enhanced Python shell for debugging
+
+# Logging and Monitoring
+loguru==0.7.2          # Simplified logging with better formatting
+python-json-logger==2.0.7  # JSON formatted logging
+
+# Configuration Management
+python-dotenv==1.0.0    # Environment variable management
+pydantic==2.5.2        # Data validation using Python type annotations
+pydantic-settings==2.1.0  # Settings management
+
+# Async and Task Queue (for future implementation)
+celery==5.3.4          # Distributed task queue
+redis==5.0.1           # Redis client for Celery backend
+
+# Utilities
+tenacity==8.2.3        # Retry logic with exponential backoff
+click==8.1.7           # CLI creation framework
+rich==13.7.0           # Rich terminal output and formatting
+tqdm==4.66.1           # Progress bars
+
+# API Development (for future health checks and endpoints)
+fastapi==0.104.1       # Modern web API framework
+uvicorn==0.24.0        # ASGI server for FastAPI
+httpx>=0.27.0,<0.28.0  # HTTP client (compatible with ollama)
+
+# Documentation
+mkdocs==1.5.3          # Documentation site generator
+mkdocs-material==9.5.2  # Material theme for MkDocs

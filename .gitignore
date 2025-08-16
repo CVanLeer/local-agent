@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+venv_linux/
+.venv/
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.hypothesis/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project specific
+pipeline_logs/
+pipeline_results.json
+reports/
+reviews/
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Documentation
+docs/_build/
+site/
+
+# Distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
